@@ -74,9 +74,16 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem "factory_bot_rails"
+  gem 'pry'
 end  
 
 gem 'devise'
+
+gem 'httparty', '~> 0.13.7'
+
+gem 'rspotify'
+
+
 
 
 
