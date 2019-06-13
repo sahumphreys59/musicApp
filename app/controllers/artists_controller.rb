@@ -1,5 +1,5 @@
 class ArtistsController < ApplicationController
-	RSpotify.authenticate("97dd28ae9a2e42d0bf093cca5d8868ca", "03db0d22204d4e0eafb7c780492c923c")
+	RSpotify.authenticate(Figaro.env.client_id, Figaro.env.client_secret)
 	
   def index
 

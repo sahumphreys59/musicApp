@@ -83,6 +83,10 @@ gem 'httparty', '~> 0.13.7'
 
 gem 'rspotify'
 
+gem 'omniauth-spotify'
+
+gem "figaro"
+
 
 
 
