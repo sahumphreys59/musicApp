@@ -1,4 +1,9 @@
 FactoryBot.define do
+  factory :post do
+    title { "MyString" }
+    description { "MyString" }
+  end
+
   factory :user do
     sequence :email do |n|
        "dummyEmail#{n}@gmail.com" 
