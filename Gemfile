@@ -75,6 +75,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem "factory_bot_rails"
   gem 'pry'
+  gem "better_errors"
+  gem "binding_of_caller"
 end  
 
 gem 'devise'
@@ -86,6 +88,8 @@ gem 'rspotify'
 gem 'omniauth-spotify'
 
 gem "figaro"
+
+
 
 
 

@@ -6,7 +6,8 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
 
-  config.omniauth :spotify, Figaro.env.client_id, Figaro.env.client_secret
+  config.omniauth :spotify, Figaro.env.CLIENT_ID, Figaro.env.CLIENT_SECRET
+   
     
 
 
