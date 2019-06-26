@@ -16,7 +16,7 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0,20]
       user.name = auth.info.name
       user.nickname = auth.info.nickname
-      binding.pry 
+
     end      
   end 
 
