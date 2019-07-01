@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :omniauthable, 
          :omniauth_providers => [:spotify]
 
+
    def email_required?
       false
    end       
@@ -16,7 +17,6 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0,20]
       user.name = auth.info.name
       user.nickname = auth.info.nickname
-
     end      
   end 
 
