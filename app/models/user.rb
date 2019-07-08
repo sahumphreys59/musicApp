@@ -5,6 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :omniauthable, 
          :omniauth_providers => [:spotify]
 
+  has_many :likes, dependent: :destroy       
+
 
    def email_required?
       false
@@ -19,6 +21,7 @@ class User < ApplicationRecord
       user.nickname = auth.info.nickname
     end      
   end 
+
 
 
 

@@ -1,4 +1,15 @@
 FactoryBot.define do
+  factory :like do
+    song_id { 1 }
+    user_id { nil }
+  end
+
+
+
+  
+
+  
+
   factory :post do
     title { "MyString" }
     description { "MyString" }

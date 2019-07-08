@@ -1,8 +1,6 @@
 class ArtistsController < ApplicationController
-      before_action :authenticate_user!
 	RSpotify.authenticate(Figaro.env.client_id, Figaro.env.client_secret)
 
-	
   def index
     if !params[:artist_name].empty?
      @artists = RSpotify::Artist.search(params[:artist_name])
@@ -14,6 +12,5 @@ class ArtistsController < ApplicationController
   def show
     @artist = RSpotify::Artist.find(params[:id])
   end
-
 
 end
