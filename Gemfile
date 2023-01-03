@@ -81,7 +81,7 @@ end
 
 gem 'devise'
 
-gem 'httparty', '~> 0.13.7'
+gem 'httparty', '~> 0.21.0'
 
 gem 'rspotify'
 
